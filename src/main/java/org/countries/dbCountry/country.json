@@ -1,0 +1,173 @@
+{
+  "_id": "6657ef349fbd89cc39ea4cdc",
+  "country": "Kyrgyzstan",
+  "description": "Description of Country 1",
+  "cities": [
+    {
+      "_id": "6655d541b28c0d37b8918129",
+      "name": "Bishkek",
+      "population": 976734,
+      "description": "Бишкек – это столица Кыргызстана, расположенная у подножия гор Тянь-Шань в Центральной Азии. Отсюда можно добраться до горных хребтов Ала-Тоо и национального парка Ала-Арча",
+      "hotels": [
+        {
+          "name": "Novotel",
+          "costAnHour": 136,
+          "image": "https://www.ahstatic.com/photos/a145_ho_00_p_1024x768.jpg",
+          "_id": "66531200f80afc8806e3c6d5",
+          "isHotel": true,
+          "description": "Novotel Бишкек Сити Центр - отличный выбор для деловых поездок и отдыха. Удобно расположенный в центре Бишкека"
+        },
+        {
+          "name": "Sheraton Bishkek",
+          "costAnHour": 171,
+          "image": "https://ak-sai.com/wp-content/uploads/43e4f3_0e999f55707d48b4b884aedfd3be3a96_mv2_d_4960_3508_s_4_2.jpg",
+          "_id": "66533b0a39f8643ee509407c",
+          "isHotel": true,
+          "description": "Шератон Бишкек, в самом сердце Центральной Азии, с панорамным видом на город и горы Тянь-Шань"
+        },
+        {
+          "name": "Hyatt Regency Bishkek",
+          "costAnHour": 176,
+          "image": "https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2017/09/01/1205/Hyatt-Regency-Bishkek-P068-Exterior.jpg/Hyatt-Regency-Bishkek-P068-Exterior.16x9.jpg",
+          "_id": "66533b2039f8643ee509407d",
+          "isHotel": true,
+          "description": "Первый 5-звездочный отель в Кыргызской Республике, Hyatt Regency Бишкек"
+        }
+      ],
+      "cafes": [
+        {
+          "_id": "66545dadf8fda2cb9c8308ba",
+          "isCafes": true,
+          "cafeName": "Faiza",
+          "cafeRating": "4.7",
+          "cafeSocial": {
+            "website": "https://faiza.kg/",
+            "_id": "6714a567b6c7cc4ddbc5ad68"
+          },
+          "cafeStreet": {
+            "name": "ул. Медерова 159",
+            "address": "https://2gis.kg/bishkek/branches/70000001019339200/firm/70000001020450523/74.607942%2C42.852602?m=74.597549%2C42.868452%2F14.12",
+            "_id": "6714a567b6c7cc4ddbc5ad69"
+          },
+          "cafeDescription": "На протяжении многих лет мы создаем для наших клиентов атмосферу уюта и отдыха. Каждый день нас посещает огромное количество людей всех возрастов, начиная от студентов и заканчивая деловыми людьми.",
+          "cafeImage": "https://faiza.kg/media/info/gallery/about-us-banner_vnzHtUh.jpg",
+          "cafeMeals": [
+            {
+              "_id": "6714a567b6c7cc4ddbc5ad6a",
+              "name": "Блины со сметаной",
+              "image": "https://faiza.kg/media/menu/dishes/IMG_4225.jpg",
+              "description": "Блины — жареное кулинарное изделие, которое готовится из очень жидкого теста, которое разливается по раскаленной сковороде. Блины подаются с самыми разнообразными закусками. В данном варианте дополнением к блинам является сметана."
+            },
+            {
+              "_id": "6714a567b6c7cc4ddbc5ad6b",
+              "name": "Босо Лагман",
+              "image": "https://faiza.kg/media/menu/dishes/IMG_4288.jpg",
+              "description": "Лагман является популярным блюдом среднеазиатской кухни. Готовится из тянутой лапши, мяса и овощей. Лапша растягивается вручную. Также в лагман добавляются пряности и зелень. Подается в горячем виде. Босо — это вид лагмана, являющийся жареным."
+            },
+            {
+              "_id": "6714a567b6c7cc4ddbc5ad6c",
+              "name": "Шорпо",
+              "image": "https://faiza.kg/media/menu/dishes/IMG_4343.jpg",
+              "description": "Шорпо — это мясной бульон с мясом и картофелем, который готовят все народы Средней Азии. Является очень жирным и питательным блюдом. Для придания особого аромата добавляются лук и специи."
+            }
+          ],
+          "cafeTime": "09:00-21:00"
+        },
+        {
+          "_id": "66548d04650396dd7a76fff6",
+          "isCafes": true,
+          "cafeName": "Cafe Relax",
+          "cafeRating": "4.5",
+          "cafeSocial": {
+            "website": "https://caferelax.kg/",
+            "instagram": "https://www.instagram.com/caferelax.kg/",
+            "_id": "6714a567b6c7cc4ddbc5ad6e"
+          },
+          "cafeStreet": {
+            "name": "ул. Токтогула 140",
+            "address": "https://2gis.kg/bishkek/firm/70000001020205072/74.593857%2C42.872367?m=74.593964%2C42.87218%2F19.71 ",
+            "_id": "6714a567b6c7cc4ddbc5ad6f"
+          },
+          "cafeDescription": "Евро-Турецкая кафе. Насладитесь вкусом зарубежных блюд.Cafe Relax турецкий ресторан в Кыргызстане ",
+          "cafeImage": "https://media-cdn.tripadvisor.com/media/photo-s/0c/a3/96/c6/coffee-relax-interior.jpg",
+          "cafeMeals": [
+            {
+              "_id": "6714a567b6c7cc4ddbc5ad70",
+              "name": "Мой Завтрак",
+              "image": "https://caferelax.kg/img/caferelax/adgood/286_1_i.jpg?v=261041",
+              "description": "Турецкая выпечка, сыры, оливки, яйцо, колбаса, помидоры-огурцы, сливочное масло, мед, нутелла, один чай."
+            },
+            {
+              "_id": "6714a567b6c7cc4ddbc5ad71",
+              "name": "Турецкий Завтрак",
+              "image": "https://caferelax.kg/img/caferelax/adgood/128_1_i.jpg?v=409343",
+              "description": "Турецкие выпечки, картофель фри, сыр белый , сыр плетеный, колбаса и яйцо, помдор-огрцу, мед, варенье, сливочное масло, творог, нутелла, лаваш, фрукты и чайник чай"
+            },
+            {
+              "_id": "6714a567b6c7cc4ddbc5ad72",
+              "name": "Менемен 350",
+              "image": "https://caferelax.kg/img/caferelax/adgood/138_1_i.jpg?v=283848",
+              "description": "Помидоры, яйца, перец болгарский"
+            }
+          ],
+          "cafeTime": "08:00-12:00"
+        },
+        {
+          "_id": "66548d0e650396dd7a76fff7",
+          "isCafes": true,
+          "cafeName": "NAVAT",
+          "cafeDescription": "NAVAT придет к дверям ваших близких с вкуснейшими блюдами! Заказать бесплатную доставку еды",
+          "cafeRating": "5",
+          "cafeSocial": {
+            "website": "https://navat.kg/",
+            "instagram": "https://www.instagram.com/navat_kg/",
+            "_id": "6714a567b6c7cc4ddbc5ad74"
+          },
+          "cafeStreet": {
+            "name": "12 Филиалов",
+            "address": "https://2gis.kg/bishkek/branches/70000001019340766?m=74.594578%2C42.872989%2F17.41",
+            "_id": "6714a567b6c7cc4ddbc5ad75"
+          },
+          "cafeImage": "https://avatars.mds.yandex.net/get-altay/4797538/2a0000017a9c2617a3e37b4f6cecbe7aa550/orig",
+          "cafeMeals": [
+            {
+              "_id": "6714a567b6c7cc4ddbc5ad76",
+              "name": "Плов Узгенский",
+              "image": "https://navat.kg/dostavka/files/products/plov-uzgenskij-4.300x300.jpg",
+              "description": "Приготовлен на основе рассыпчатого узгенского риса королевского сорта \"Девзира\", с нежным мясом ягненка и телятины с добавлением желтой моркови и чеснока"
+            },
+            {
+              "_id": "6714a567b6c7cc4ddbc5ad77",
+              "name": "Гюро Лагман",
+              "image": "https://navat.kg/dostavka/files/products/gyuro-lagman.300x300.jpg",
+              "description": "Яркий подлив из нежной телятины и свежих овощей (болгарский перец, полугорький перец, капуста басяй)"
+            },
+            {
+              "_id": "6714a567b6c7cc4ddbc5ad78",
+              "name": "Плов Той Аши",
+              "image": "https://navat.kg/dostavka/files/products/tojashi.300x300.jpg",
+              "description": "Рассыпчатый рис Лазер с мясом ягненка и телятины"
+            }
+          ],
+          "cafeTime": "10:00-00:00"
+        }
+      ],
+      "attractions": [
+        {
+          "description": "Национальный исторический музей Кыргызской Республики - один из крупнейших музеев Центральной Азии.",
+          "history": "Музей основан 9 декабря 1925 года. Своих первых посетителей он принял 5 марта 1927 года.\nЗа свою историю музей неоднократно менял название.\n\n",
+          "image": "https://sxodim.com/uploads/posts/2022/04/29/optimized/6d3fd89a85c2539a8e6d92778b902251_1400x790-q-85.jpg",
+          "name": "Национальный исторический музей",
+          "street": "720040 г.Бишкек пр.Чуй 112, площадь «Ала-Тоо»720040 г.Бишкек пр.Чуй 112, площадь «Ала-Тоо»",
+          "time": " 09.00 до 18.00",
+          "year": 1925,
+          "_id": "6655d3f0b28c0d37b8918122",
+          "isAttraction": true
+        }
+      ]
+    }
+  ],
+  "images": [
+    ""
+  ]
+}
