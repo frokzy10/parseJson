@@ -1,6 +1,7 @@
 package org.countries.service;
 
 import com.google.gson.Gson;
+import org.countries.model.Cafes;
 import org.countries.model.Cities;
 import org.countries.model.Country;
 import org.countries.model.Hotels;
@@ -12,6 +13,7 @@ import java.io.FileReader;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class CountryService {
     public static void main(String[] args) throws FileNotFoundException {
@@ -25,17 +27,33 @@ public class CountryService {
         System.out.println("Введите название отеля: ");
         String hotelName = scanner.nextLine();
 
+        System.out.println("Введите название кафе: ");
+        String cafeName = scanner.nextLine();
+
+        // Собираем все отели и кафе в один список
         List<Cities> citiesList = country.getCities();
         List<Hotels> allHotels = citiesList.stream()
                 .flatMap(cities -> cities.getHotels().stream())
                 .sorted(Comparator.comparing(Hotels::getName))
-                .toList();
+                .collect(Collectors.toList());
 
-        Hotels foundH = findByNameHotel(allHotels,hotelName);
-        if (foundH != null){
-            System.out.println("Отель найден: " + foundH);
-        }else{
-            System.out.println("Отель не найден: " + hotelName + " не найден");
+        List<Cafes> allCafes = citiesList.stream()
+                .flatMap(cities -> cities.getCafes().stream())
+                .sorted(Comparator.comparing(Cafes::getCafeName))
+                .collect(Collectors.toList());
+
+        Hotels foundHotel = findByNameHotel(allHotels, hotelName);
+        if (foundHotel != null) {
+            System.out.println("Отель найден: " + foundHotel);
+        } else {
+            System.out.println("Отель '" + hotelName + "' не найден.");
+        }
+
+        Cafes foundCafe = findByCafeName(allCafes, cafeName);
+        if (foundCafe != null) {
+            System.out.println("Кафе найдено: " + foundCafe);
+        } else {
+            System.out.println("Кафе '" + cafeName + "' не найдено.");
         }
     }
     private static Hotels findByNameHotel(List<Hotels> hotelList,String hotelName){
@@ -53,6 +71,23 @@ public class CountryService {
             }else if (comp < 0){
                 min = mid + 1;
             }else {
+                max = mid - 1;
+            }
+        }
+        return null;
+    }
+    private static Cafes findByCafeName(List<Cafes> cafesList,String cafeName){
+        int min = 0;
+        int max = cafesList.size() - 1;
+        while (min <= max){
+            int mid = (max + min) / 2;
+            Cafes midCafe = cafesList.get(mid);
+            int comp = midCafe.getCafeName().compareToIgnoreCase(cafeName);
+            if (comp == 0){
+                return midCafe;
+            }else if (comp < 0){
+                min = mid + 1;
+            }else{
                 max = mid - 1;
             }
         }
